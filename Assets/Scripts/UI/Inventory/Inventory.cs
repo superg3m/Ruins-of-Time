@@ -11,7 +11,6 @@ public class Inventory
         itemList = new List<Item>();
 
         Additem(new Item { itemType = Item.ItemType.Sword, amount = 1 });
-        Debug.Log(itemList.Count);
     }
     public void Additem(Item item)
     {

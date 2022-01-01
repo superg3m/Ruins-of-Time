@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private Inventory_UI uiInventory;
+    //[SerializeField] private Inventory_UI uiInventory;
     private Inventory inventory;
+    private PauseMenu pm;
     private void Start()
     {
-        inventory = new Inventory();
-        uiInventory.SetInventory(inventory);
+        
     }
 
     // Variables for basic movement
@@ -27,18 +27,24 @@ public class PlayerMovement : MonoBehaviour
     public bool dashCooldown = false;
     public float dashCooldownTime = 10.0f;
     public float dashCooldownTimer = 0.0f;
-
-
+    
+    
     void Update()
     {
-        // calling processInputs method
-        ProcessInputs();
+        pm = FindObjectOfType<PauseMenu>();
+        if (!pm.gameIsPaused)
+        {
+            // calling processInputs method
+            ProcessInputs();
+        }
     }
 
     void FixedUpdate()
     {
+
         // Physics processing
         Move();
+
     }
 
     void ProcessInputs()

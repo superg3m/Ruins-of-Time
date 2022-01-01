@@ -7,12 +7,18 @@ public class Shooting : MonoBehaviour
 
     public Transform firePoint;
     public GameObject fireballPrefab;
+    private PauseMenu pm;
 
     public float fireball_speed = 20f;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) Shoot();
+        pm = FindObjectOfType<PauseMenu>();
+        if (!pm.gameIsPaused)
+        {
+            if (Input.GetButtonDown("Fire1")) Shoot();
+        }
+        
     }
 
 

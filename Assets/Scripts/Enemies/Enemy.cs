@@ -34,7 +34,6 @@ public class Enemy : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("working");
         if (collision.gameObject.tag == "fireball") takeDamage(10);
     }
 
