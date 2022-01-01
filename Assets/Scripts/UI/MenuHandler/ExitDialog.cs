@@ -5,11 +5,12 @@ using UnityEngine;
 public class ExitDialog : MonoBehaviour
 {
     [SerializeField] private Canvas exitDialog;
+
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            exitDialog.GetComponent<Canvas>().enabled = false;
+            exitDialog.GetComponent<Canvas>().enabled = true;
         }
     }
     public void exitGame()
