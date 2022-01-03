@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Enemies",
+    "\\GameHandler",
+    "\\GameHandler\\Collision",
+    "\\GameHandler\\Player",
+    "\\UI",
+    "\\UI\\Abilities",
+    "\\UI\\Health",
+    "\\UI\\Inventory",
+    "\\UI\\MenuHandler"
+  ],
+  "SelectedNode": "\\GameHandler\\Collision\\Fireball_ImpactHandler.cs",
+  "PreviewInSolutionExplorer": false
+}

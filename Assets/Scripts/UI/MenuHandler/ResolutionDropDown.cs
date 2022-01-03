@@ -12,6 +12,12 @@ public class ResolutionDropDown : MonoBehaviour
     {
         resolutions = Screen.resolutions;
         dropDown.ClearOptions();
+        AddingResolutionsToDropDown();
+    }
+
+
+    private void AddingResolutionsToDropDown()
+    {
         List<string> options = new List<string>();
         int currentResolutionIndex = 0;
 
@@ -28,6 +34,7 @@ public class ResolutionDropDown : MonoBehaviour
         dropDown.value = currentResolutionIndex;
         dropDown.RefreshShownValue();
     }
+
 
     public void SetResolution(int ResolutionIndex)
     {

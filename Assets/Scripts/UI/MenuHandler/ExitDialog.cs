@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class ExitDialog : MonoBehaviour
 {
-    [SerializeField] private Canvas exitDialog;
+    [SerializeField] private GameObject exitDialog;
 
+    private void Start()
+    {
+        exitDialog.SetActive(false);
+    }
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            exitDialog.GetComponent<Canvas>().enabled = true;
+            exitDialog.SetActive(true);
         }
     }
     public void exitGame()
     {
-        exitDialog.GetComponent<Canvas>().enabled = true;
+        exitDialog.SetActive(true);
     }
     public void exitGame_yes()
     {
@@ -24,6 +28,6 @@ public class ExitDialog : MonoBehaviour
 
     public void exitGame_no()
     {
-        exitDialog.GetComponent<Canvas>().enabled = false;
+        exitDialog.SetActive(false);
     }
 }

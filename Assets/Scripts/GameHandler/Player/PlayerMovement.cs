@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private PauseMenu pm;
     private void Start()
     {
-        
+
     }
 
     // Variables for basic movement

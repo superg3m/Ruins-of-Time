@@ -519,7 +519,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 204a98aaa0f790c823dbe1c9209925a4
+      Hash: e43d7f292fbcafb4ec6d8622f25597c5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ExitDialog
