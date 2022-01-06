@@ -52,8 +52,8 @@ public class PlayerMovement : MonoBehaviour
         // ------------------BASIC DIRECTIONAL MOVEMENT-----------------
 
         // Getting directional inputs from player
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        float moveX = Input.GetAxisRaw("horizontal");
+        float moveY = Input.GetAxisRaw("vertical");
         moveDirection = new Vector2(moveX, moveY).normalized;
 
         // Checking if player's last key was: W, A, S or D
